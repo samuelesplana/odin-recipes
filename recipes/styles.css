@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header h1 {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+.recipes {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.recipes-list {
+    padding: 30px;
+}
+.recipes img {
+    width: 400px;
+    border-radius: 5px;
+}
+.recipes img:hover {
+    transform: scale(1.1);
+}
+.recipes-list p{
+    padding: 25px;
+    text-align: center;
+}
