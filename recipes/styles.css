@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 header {
     width: 100%;
@@ -13,8 +14,14 @@ header {
 }
 header h1 {
     text-align: center;
-    font-family: 'Lato', sans-serif;
     color: #333;
+}
+header img {
+    cursor: pointer;
+    width: 200px;
+}
+header .recipe_name {
+    font-size: 24px;
 }
 .recipes {
     margin-top: 50px;
@@ -32,8 +39,44 @@ header h1 {
 }
 .recipes img:hover {
     transform: scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8)
 }
 .recipes-list p{
+    font-size: 1.2em;
+    font-weight: 500;
     padding: 25px;
     text-align: center;
+}
+#recipe {
+    margin-top: 50px;
+    position: relative; 
+}
+.recipe-desc {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recipe-desc .instructions {
+    padding: 50px;
+    max-width: 800px;
+}
+.recipe-desc img {
+    width: 600px;
+}
+.recipe-desc ul li {
+    margin: 12px;
+    color: #333;
+}
+.recipe-desc ol {
+    margin-bottom: 30px;
+}
+.recipe-desc ol li {
+    margin: 12px;
+    color: #333;
+}
+.recipe-desc .instructions a{
+    color: #fa8704;
+    text-decoration: none;
+    font-weight: 700;
 }
